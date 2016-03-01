@@ -27,12 +27,14 @@ public class Visitor implements IVisitor{
     private String getManagerInfo(Manager _manager){
         String basicInfo = this.getBasicInfo(_manager);
         String otherInfo = "业绩: " +_manager.getPerformance()+"\t";
+        calManagerSalary(_manager.getSalary());
         return basicInfo + otherInfo;
     }
     //组装出普通员工信息
     private String getCommonEmployee(CommonEmployee _commonEmployee){
         String basicInfo = this.getBasicInfo(_commonEmployee);
         String otherInfo = "工作: "+_commonEmployee.getJob()+"\t";
+        calManagerSalary(_commonEmployee.getSalary());
         return basicInfo + otherInfo;
     }
 
