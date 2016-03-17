@@ -1833,6 +1833,8 @@ IProject.iterator	/Users/sc/Documents/ZenOfDesignPatterns/迭代器模式(整理
 IProjectIterator	/Users/sc/Documents/ZenOfDesignPatterns/迭代器模式(整理项目信息)/IProjectIterator.java	/^public interface IProjectIterator extends Iterator {$/;"	kind:interface	inherits:Iterator
 IProxy	/Users/sc/Documents/ZenOfDesignPatterns/代理模式(代理的个性)/IProxy.java	/^public interface IProxy{$/;"	kind:interface
 IProxy.count	/Users/sc/Documents/ZenOfDesignPatterns/代理模式(代理的个性)/IProxy.java	/^    public void count();$/;"	kind:method	interface:IProxy	access:public	signature:()
+IRunner	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/IRunner.java	/^public interface IRunner{$/;"	kind:interface
+IRunner.run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/IRunner.java	/^    public void run();$/;"	kind:method	interface:IRunner	access:public	signature:()
 IShowVisitor	/Users/sc/Documents/ZenOfDesignPatterns/访问者模式(多个访问者)/IShowVisitor.java	/^public interface IShowVisitor extends IVisitor{$/;"	kind:interface	inherits:IVisitor
 IShowVisitor.report	/Users/sc/Documents/ZenOfDesignPatterns/访问者模式(多个访问者)/IShowVisitor.java	/^    public void report();$/;"	kind:method	interface:IShowVisitor	access:public	signature:()
 IStrategy	/Users/sc/Documents/ZenOfDesignPatterns/策略模式(锦囊妙计)/IStrategy.java	/^public interface IStrategy {$/;"	kind:interface
@@ -2731,6 +2733,20 @@ Rifle.shoot	/Users/sc/Documents/ZenOfDesignPatterns/里氏替换原则(子类必
 Role	/Users/sc/Documents/ZenOfDesignPatterns/访问者模式(双分派-演员演角色)/Role.java	/^public interface Role{$/;"	kind:interface
 Role	/Users/sc/Documents/ZenOfDesignPatterns/访问者模式(双分派-角色给人演)/Role.java	/^public interface Role{$/;"	kind:interface
 Role.accept	/Users/sc/Documents/ZenOfDesignPatterns/访问者模式(双分派-角色给人演)/Role.java	/^    public void accept(AbsActor _actor);$/;"	kind:method	interface:Role	access:public	signature:(AbsActor _actor)
+Runner	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/Runner.java	/^public class Runner implements IRunner{$/;"	kind:class	inherits:IRunner
+Runner.run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/Runner.java	/^    public void run(){$/;"	kind:method	class:Runner	access:public	signature:()
+RunnerAgent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    public RunnerAgent(){$/;"	kind:method	class:RunnerAgent	access:public	signature:()
+RunnerAgent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    public RunnerAgent(Object ...object){$/;"	kind:method	class:RunnerAgent	access:public	signature:(Object ....object)
+RunnerAgent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^public class RunnerAgent implements IRunner{$/;"	kind:class	inherits:IRunner
+RunnerAgent.RunnerAgent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    public RunnerAgent(){$/;"	kind:method	class:RunnerAgent	access:public	signature:()
+RunnerAgent.RunnerAgent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    public RunnerAgent(Object ...object){$/;"	kind:method	class:RunnerAgent	access:public	signature:(Object ....object)
+RunnerAgent.after	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    private void after(){$/;"	kind:method	class:RunnerAgent	file:	access:private	signature:()
+RunnerAgent.before	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    private void before(){$/;"	kind:method	class:RunnerAgent	file:	access:private	signature:()
+RunnerAgent.run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    public void run(){$/;"	kind:method	class:RunnerAgent	access:public	signature:()
+RunnerAgent.subject	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    private IRunner subject = null;$/;"	kind:field	class:RunnerAgent	file:	access:private
+RunnerAgent.this.after	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^         this.after();$/;"	kind:method	signature:()
+RunnerAgent.this.before	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^         this.before();$/;"	kind:method	signature:()
+RunnerAgent.this.subject.run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^         this.subject.run();$/;"	kind:method	signature:()
 RunningState	/Users/sc/Documents/ZenOfDesignPatterns/状态模式(电梯)/RunningState.java	/^public class RunningState extends LiftState {$/;"	kind:class	inherits:LiftState
 RunningState.close	/Users/sc/Documents/ZenOfDesignPatterns/状态模式(电梯)/RunningState.java	/^    public void close(){$/;"	kind:method	class:RunningState	access:public	signature:()
 RunningState.open	/Users/sc/Documents/ZenOfDesignPatterns/状态模式(电梯)/RunningState.java	/^    public void open(){$/;"	kind:method	class:RunningState	access:public	signature:()
@@ -3241,6 +3257,7 @@ adultSuperMan.getSpecialTalent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/
 adultSuperMan.specialTalent	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/工厂方法模式VS建造者模式/工厂方法模式/Client.java	/^        adultSuperMan.specialTalent();$/;"	kind:method	signature:()
 advContext	/Users/sc/Documents/ZenOfDesignPatterns/原型模式(个性化电子账单)/AdvTemplate.java	/^    private String advContext = "国庆抽奖活动通知:只要刷卡就送你一百万!...";$/;"	kind:field	class:AdvTemplate	file:	access:private
 advSubject	/Users/sc/Documents/ZenOfDesignPatterns/原型模式(个性化电子账单)/AdvTemplate.java	/^    private String advSubject = "XX银行国庆信用卡抽奖活动";$/;"	kind:field	class:AdvTemplate	file:	access:private
+after	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    private void after(){$/;"	kind:method	class:RunnerAgent	file:	access:private	signature:()
 after	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(静态)/Proxy.java	/^    private void after(){$/;"	kind:method	class:Proxy	file:	access:private	signature:()
 agg	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/迭代器模式/Client.java	/^        Aggregate agg = new ConcreteAggregate();$/;"	kind:local
 alarm	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(升级版_增加建造者)/BMWModel.java	/^    protected void alarm(){$/;"	kind:method	class:BMWModel	access:protected	signature:()
@@ -3302,6 +3319,7 @@ beSelled	/Users/sc/Documents/ZenOfDesignPatterns/桥梁模式(企业盈利)/Hous
 beSelled	/Users/sc/Documents/ZenOfDesignPatterns/桥梁模式(企业盈利)/IPod.java	/^    public void beSelled(){$/;"	kind:method	class:IPod	access:public	signature:()
 beSelled	/Users/sc/Documents/ZenOfDesignPatterns/桥梁模式(企业盈利)/Product.java	/^    public abstract void beSelled();$/;"	kind:method	class:Product	access:public	signature:()
 beanInfo	/Users/sc/Documents/ZenOfDesignPatterns/备忘录模式(多状态)/BeanUtils.java	/^            BeanInfo beanInfo = Introspector.getBeanInfo(bean.getClass());$/;"	kind:local
+before	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    private void before(){$/;"	kind:method	class:RunnerAgent	file:	access:private	signature:()
 before	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(静态)/Proxy.java	/^    private void before(){$/;"	kind:method	class:Proxy	file:	access:private	signature:()
 benz	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(升级版_增加建造者)/BenzBuilder.java	/^    private BenzModel benz=new BenzModel();$/;"	kind:field	class:BenzBuilder	file:	access:private
 benz	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(升级版_增加建造者)/Client.java	/^        BenzModel benz = (BenzModel)benzBuilder.getCarModel();$/;"	kind:local
@@ -4646,6 +4664,9 @@ run	/Users/sc/Documents/ZenOfDesignPatterns/依赖倒置原则(构造函数注�
 run	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(升级版_增加建造者)/CarModel.java	/^    final public void run(){$/;"	kind:method	class:CarModel	access:public	signature:()
 run	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(完全体)/CarModel.java	/^    final public void run(){$/;"	kind:method	class:CarModel	access:public	signature:()
 run	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(汽车模型)/CarModel.java	/^    final public void run(){$/;"	kind:method	class:CarModel	access:public	signature:()
+run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/IRunner.java	/^    public void run();$/;"	kind:method	interface:IRunner	access:public	signature:()
+run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/Runner.java	/^    public void run(){$/;"	kind:method	class:Runner	access:public	signature:()
+run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    public void run(){$/;"	kind:method	class:RunnerAgent	access:public	signature:()
 run	/Users/sc/Documents/ZenOfDesignPatterns/模板方法模式(控制喇叭)/HummerModel.java	/^    final public void run(){$/;"	kind:method	class:HummerModel	access:public	signature:()
 run	/Users/sc/Documents/ZenOfDesignPatterns/模板方法模式/HummerModel.java	/^    public final void run(){$/;"	kind:method	class:HummerModel	access:public	signature:()
 run	/Users/sc/Documents/ZenOfDesignPatterns/状态模式(电梯)/ClosingState.java	/^    public void run(){$/;"	kind:method	class:ClosingState	access:public	signature:()
@@ -4927,6 +4948,7 @@ subject	/Users/sc/Documents/ZenOfDesignPatterns/享元模式(报考系统)/SignI
 subject	/Users/sc/Documents/ZenOfDesignPatterns/享元模式(线程安全)/Client.java	/^            String subject = "科目" + i;$/;"	kind:local
 subject	/Users/sc/Documents/ZenOfDesignPatterns/享元模式(线程安全)/SignInfo.java	/^    private String subject;$/;"	kind:field	class:SignInfo	file:	access:private
 subject	/Users/sc/Documents/ZenOfDesignPatterns/原型模式(个性化电子账单)/Mail.java	/^    private String subject;$/;"	kind:field	class:Mail	file:	access:private
+subject	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^    private IRunner subject = null;$/;"	kind:field	class:RunnerAgent	file:	access:private
 subject	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(动态)/Client.java	/^        Subject subject = new RealSubject();$/;"	kind:local
 subject	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(静态)/Proxy.java	/^    private Subject subject = null;$/;"	kind:field	class:Proxy	file:	access:private
 subject	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/观察者模式/Client.java	/^        ConcreteSubject subject = new ConcreteSubject();$/;"	kind:local
@@ -5015,6 +5037,7 @@ third	/Users/sc/Documents/ZenOfDesignPatterns/迪米特法则(刺猬取暖-朋�
 third	/Users/sc/Documents/ZenOfDesignPatterns/迪米特法则(刺猬取暖-朋友间也有距离-正例)/Wizard.java	/^    private int third(){$/;"	kind:method	class:Wizard	file:	access:private	signature:()
 this.a.doSomethingA	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/门面模式/Context.java	/^        this.a.doSomethingA();$/;"	kind:method	signature:()
 this.a.doSomethingA	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/门面模式/Facade.java	/^        this.a.doSomethingA();$/;"	kind:method	signature:()
+this.after	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^         this.after();$/;"	kind:method	signature:()
 this.after	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(静态)/Proxy.java	/^         this.after();$/;"	kind:method	signature:()
 this.alarm	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(升级版_增加建造者)/CarModel.java	/^                this.alarm();$/;"	kind:method	signature:()
 this.alarm	/Users/sc/Documents/ZenOfDesignPatterns/建造者模式(完全体)/CarModel.java	/^                this.alarm();$/;"	kind:method	signature:()
@@ -5024,6 +5047,7 @@ this.alarm	/Users/sc/Documents/ZenOfDesignPatterns/模板方法模式/HummerMode
 this.b.doSomethingB	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/门面模式/Context.java	/^        this.b.doSomethingB();$/;"	kind:method	signature:()
 this.b.doSomethingB	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/门面模式/Facade.java	/^        this.b.doSomethingB();$/;"	kind:method	signature:()
 this.backup.getState	/Users/sc/Documents/ZenOfDesignPatterns/备忘录模式(Clone-发起人自主备份)/Originator.java	/^         this.setState(this.backup.getState());$/;"	kind:method	signature:()
+this.before	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^         this.before();$/;"	kind:method	signature:()
 this.before	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(静态)/Proxy.java	/^         this.before();$/;"	kind:method	signature:()
 this.buyComputer	/Users/sc/Documents/ZenOfDesignPatterns/中介者模式(进销存)/Mediator.java	/^            this.buyComputer((Integer)objects[ 0 ]);$/;"	kind:method	signature:(Integer)objects[ 0 ]
 this.c.doSomethingC	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/门面模式/Facade.java	/^        this.c.doSomethingC();$/;"	kind:method	signature:()
@@ -5099,6 +5123,7 @@ this.stop	/Users/sc/Documents/ZenOfDesignPatterns/模板方法模式/HummerModel
 this.strategy.doSomething	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/策略模式/Context.java	/^        this.strategy.doSomething();$/;"	kind:method	signature:()
 this.strategy.operate	/Users/sc/Documents/ZenOfDesignPatterns/策略模式(锦囊妙计)/Context.java	/^        this.strategy.operate();$/;"	kind:method	signature:()
 this.subject.request	/Users/sc/Documents/ZenOfDesignPatterns/通用代码/代理模式(静态)/Proxy.java	/^         this.subject.request();$/;"	kind:method	signature:()
+this.subject.run	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/代理模式VS装饰模式/代理模式(静态)/RunnerAgent.java	/^         this.subject.run();$/;"	kind:method	signature:()
 toString	/Users/sc/Documents/ZenOfDesignPatterns/备忘录模式(多状态)/Originator.java	/^    public String toString(){$/;"	kind:method	class:Originator	access:public	signature:()
 toString	/Users/sc/Documents/ZenOfDesignPatterns/模式pk/抽象工厂模式VS建造者模式/建造者模式/Car.java	/^    public String toString(){$/;"	kind:method	class:Car	access:public	signature:()
 totalSalary	/Users/sc/Documents/ZenOfDesignPatterns/访问者模式(多个访问者)/ITotalVisitor.java	/^    public void totalSalary();$/;"	kind:method	interface:ITotalVisitor	access:public	signature:()
