@@ -10,6 +10,6 @@ public class ConcreteCommand2 extends Command{
     //必须实现一个命令
     public void execute(){
         //业务处理
-        this.receiver.doSomething();
+        super.receiver.doSomething();
     }
 }
