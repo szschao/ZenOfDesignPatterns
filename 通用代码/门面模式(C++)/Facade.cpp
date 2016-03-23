@@ -6,6 +6,7 @@ Facade::Facade()
     this->_b = new ClassB();
     this->_c = new ClassC();
     this->_context = new Context();
+    cout << "Facade..." << endl;
 }
 
 Facade::~Facade()
@@ -19,6 +20,7 @@ Facade::~Facade()
     this->_b = NULL;
     this->_c = NULL;
     this->_context = NULL;
+    cout << "~Facade..." << endl;
 }
 
 void Facade::methodA(){

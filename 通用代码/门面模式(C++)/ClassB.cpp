@@ -1,13 +1,14 @@
-#include <iostream>
 #include "ClassB.h"
 
-using namespace std;
-
 ClassB::ClassB()
-{}
+{
+    cout << "ClassB..." << endl;
+}
 
 ClassB::~ClassB()
-{}
+{
+    cout << "~ClassB..." << endl;
+}
 
 void ClassB::doSomethingB()
 {

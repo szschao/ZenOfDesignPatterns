@@ -3,14 +3,16 @@
 using namespace std;
 
 ConcreteComponent::ConcreteComponent()
-{}
+{
+	cout << "ConcreteComponent Construct" << endl;
+}
 
 ConcreteComponent::~ConcreteComponent()
 {
     cout << "~ConcreteComponent" << endl;
 }
-
-void ConcreteComponent::Operation()
+//重写父类方法
+void ConcreteComponent::Operate()
 {
-    cout << "原职责：ConcreteComponent::Operation" << endl;
+    cout << "原职责：do Something" << endl;
 }

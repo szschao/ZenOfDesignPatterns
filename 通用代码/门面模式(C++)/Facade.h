@@ -1,9 +1,7 @@
-#ifndef _FACADE_H_
-#define _FACADE_H_
 #include <iostream>
-#include "CLassA.h"
-#include "CLassB.h"
-#include "CLassC.h"
+#include "ClassA.h"
+#include "ClassB.h"
+#include "ClassC.h"
 #include "Context.h"
 
 class Facade
@@ -23,5 +21,3 @@ private:
     ClassC* _c;
     Context* _context;
 };
-
-#endif

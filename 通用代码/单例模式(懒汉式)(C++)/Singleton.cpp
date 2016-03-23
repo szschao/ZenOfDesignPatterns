@@ -7,10 +7,14 @@ Singleton* Singleton::pInstance = NULL;
 
 Singleton::Singleton()
 {
-    cout<< "Singleton..." << endl;
+    cout<< "CreateInstance" << endl;
 }
 
-Singleton* Singleton::Instance()
+Singleton::~Singleton()
+{
+}
+
+Singleton* Singleton::GetInstance()
 {
     //TODO:考虑下线程锁
     if(NULL == pInstance)
@@ -20,9 +24,9 @@ Singleton* Singleton::Instance()
     return pInstance;
 }
 
-void Singleton::Destroy()
+void Singleton::ReleaseInstance()
 {
     delete pInstance;
     pInstance = NULL;
-    cout<< "Destroy..." << endl;
+    cout<< "ReleaseInstance..." << endl;
 }

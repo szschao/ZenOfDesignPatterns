@@ -1,11 +1,10 @@
 #include "Context.h"
 
-using namespace std;
-
 Context::Context()
 {
     this->_a = new ClassA();
     this->_b = new ClassB();
+    cout << "Context..." << endl;
 }
 
 Context::~Context()
@@ -15,6 +14,7 @@ Context::~Context()
 
     this->_a = NULL;
     this->_b = NULL;
+    cout << "~Context..." << endl;
 }
 
 void Context::complexMethod()

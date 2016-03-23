@@ -2,22 +2,24 @@
 
 using namespace std;
 
-ConcreteDecorator1::ConcreteDecorator1(Component* com):Decorator(com)
-{}
+ConcreteDecorator1::ConcreteDecorator1(Component* component):Decorator(component)
+{
+	cout << "ConcreteDecorator1 Construct" << endl;
+}
 
 ConcreteDecorator1::~ConcreteDecorator1()
 {
     cout << "~ConcreteDecorator1" << endl;
 }
 
-void ConcreteDecorator1::Operation()
+void ConcreteDecorator1::Operate()
 {
-    this->_com->Operation();
-    //附加职责A
-    this->AddBehavorA();
+	//附加职责A
+    this->method1();
+    this->_component->Operate();
 }
 
-void ConcreteDecorator1::AddBehavorA()
+void ConcreteDecorator1::method1()
 {
-    cout << "附加职责A：ConcreteDecorator1::AddBehavorA" << endl;
+    cout << "附加职责A:method1 修饰" << endl;
 }

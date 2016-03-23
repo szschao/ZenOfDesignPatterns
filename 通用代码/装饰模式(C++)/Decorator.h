@@ -1,5 +1,4 @@
-#ifndef _DECORATOR_H_
-#define _DECORATOR_H_
+#pragma once
 #include <iostream>
 #include "Component.h"
 
@@ -7,11 +6,10 @@
 class Decorator:public Component
 {
 public:
-    Decorator(Component* com);
-    void SetComponent(Component* com);
+    Decorator(Component* component);
     virtual ~Decorator();
-    virtual void Operation();
+    void SetComponent(Component* component);
+    void Operate();
 protected:
-    Component* _com;
+    Component* _component;
 };
-#endif

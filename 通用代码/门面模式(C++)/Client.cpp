@@ -8,5 +8,6 @@ int main()
     pFacade->methodB();
     pFacade->methodC();
     pFacade->methodD();
+    delete pFacade;
     return 0;
 }

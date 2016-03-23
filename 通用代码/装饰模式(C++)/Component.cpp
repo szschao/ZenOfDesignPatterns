@@ -2,7 +2,9 @@
 
 using namespace std;
 Component::Component()
-{}
+{
+	cout << "Component Construct" << endl;
+}
 
 Component::~Component()
 {

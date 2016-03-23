@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    Singleton* ps = Singleton::Instance();//通过全局访问点获取实例
-    Singleton::Destroy();
+    Singleton* ps = Singleton::GetInstance();//通过全局访问点获取实例
+    Singleton::ReleaseInstance();
     return 0;
 }

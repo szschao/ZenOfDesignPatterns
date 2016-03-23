@@ -19,6 +19,7 @@ int main()
 	delete pContext;
     pContext = NULL;
 
+    cout << "-----------------------------" << endl;
     pStrategy = new ConcreteStrategy2();
     pContext = new Context(pStrategy);
     pContext->doAnything();

@@ -1,5 +1,4 @@
-#ifndef _CONCRETECOMPONENT_H_
-#define _CONCRETECOMPONENT_H_
+#pragma once
 #include <iostream>
 #include "Component.h"
 
@@ -9,7 +8,5 @@ class ConcreteComponent:public Component
 public:
     ConcreteComponent();
     ~ConcreteComponent();
-    virtual void Operation();
+    virtual void Operate();
 };
-
-#endif

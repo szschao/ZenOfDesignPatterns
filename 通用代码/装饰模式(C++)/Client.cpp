@@ -8,24 +8,25 @@
 using namespace std;
 int main()
 {
-    Component* pCom = new ConcreteComponent();        //要装饰的对象
-    Decorator* pDec = NULL;
-    pDec = new ConcreteDecorator1(pCom);            //给装饰对象附加职责A
-    pDec = new ConcreteDecorator2(pDec);            //给装饰对象附加职责B
-    pDec->Operation();
-
+    Component* pComponent = new ConcreteComponent();        //要装饰的对象
     cout << "-------------------------------" << endl;
+    Decorator* pDecorator = NULL;
+    pDecorator = new ConcreteDecorator1(pComponent);            //给装饰对象附加职责A
+    cout << "-------------------------------" << endl;
+    pDecorator = new ConcreteDecorator2(pDecorator);            //给装饰对象附加职责B
+    cout << "-------------------------------" << endl;
+    pDecorator->Operate();
+    cout << "-------------------------------" << endl;
+    delete pDecorator;
 
     //只添加一种修饰
+    cout << "-------------------------------" << endl;
     Component* pCom1 = new ConcreteComponent();
+    cout << "-------------------------------" << endl;
     DecoratorOnlyOne* pDec1 = new DecoratorOnlyOne(pCom1);
-    pDec1->Operation();
-
     cout << "-------------------------------" << endl;
-
-    delete pDec;
+    pDec1->Operate();
     cout << "-------------------------------" << endl;
-
     delete pDec1;
 
     return 0;

@@ -1,22 +1,24 @@
 #include "ConcreteDecorator2.h"
 
 using namespace std;
-ConcreteDecorator2::ConcreteDecorator2(Component* com):Decorator(com)
-{}
+ConcreteDecorator2::ConcreteDecorator2(Component* component):Decorator(component)
+{
+	cout << "ConcreteDecorator2 Construct" << endl;
+}
 
 ConcreteDecorator2::~ConcreteDecorator2()
 {
     cout << "~ConcreteDecorator2" << endl;
 }
 
-void ConcreteDecorator2::Operation()
+void ConcreteDecorator2::Operate()
 {
-    this->_com->Operation();
+    this->_component->Operate();
     //附加职责B
-    this->AddBehavorB();
+    this->method2();
 }
 
-void ConcreteDecorator2::AddBehavorB()
+void ConcreteDecorator2::method2()
 {
-    cout << "附加职责B：ConcreteDecorator2::AddBehavorB" << endl;
+    cout << "附加职责B:method2 修饰" << endl;
 }

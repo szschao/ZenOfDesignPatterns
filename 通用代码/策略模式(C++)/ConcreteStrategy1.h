@@ -1,15 +1,14 @@
-#ifndef _CONCRETESTRATEGY1_H_
-#define _CONCRETESTRATEGY1_H_
+#pragma once
 #include <iostream>
 #include "Strategy.h"
+using namespace std;
 
 class ConcreteStrategy1 : public Strategy
 {
 public:
-    ConcreteStrategy1();
-    virtual ~ConcreteStrategy1();
-    virtual void doSomething();
+    ConcreteStrategy1(void);
+    virtual ~ConcreteStrategy1(void);
+    virtual void doSomething(void);
 protected:
 private:
 };
-#endif

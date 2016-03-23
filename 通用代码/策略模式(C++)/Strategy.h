@@ -1,13 +1,12 @@
-#ifndef _STRATEGY_H_
-#define _STRATEGY_H_
-
+#pragma once
+using namespace std;
+#include <iostream>
 class Strategy
 {
 public:
-    virtual ~Strategy();
-    virtual void doSomething()=0;
+    virtual ~Strategy(void);
+    virtual void doSomething(void)=0;
 protected:
-    Strategy();
+    Strategy(void);
 private:
 };
-#endif

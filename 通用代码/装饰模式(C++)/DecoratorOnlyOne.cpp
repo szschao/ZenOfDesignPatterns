@@ -4,6 +4,7 @@ using namespace std;
 //**************只添加一种修饰******************
 DecoratorOnlyOne::DecoratorOnlyOne(Component* com):_com(com)
 {
+	cout << "DecoratorOnlyOne Construct" << endl;
 }
 
 DecoratorOnlyOne::~DecoratorOnlyOne()
@@ -13,9 +14,9 @@ DecoratorOnlyOne::~DecoratorOnlyOne()
     this->_com = NULL;
 }
 
-void DecoratorOnlyOne::Operation()
+void DecoratorOnlyOne::Operate()
 {
-    this->_com->Operation();
+    this->_com->Operate();
     this->AddBehavor();
 }
 

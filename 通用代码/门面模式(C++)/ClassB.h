@@ -1,5 +1,6 @@
-#ifndef _CLASSB_H_
-#define _CLASSB_H_
+#pragma once
+using namespace std;
+#include <iostream>
 
 class ClassB
 {
@@ -8,4 +9,3 @@ public:
     ~ClassB();
     void doSomethingB();
 };
-#endif

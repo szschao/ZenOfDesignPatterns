@@ -1,8 +1,8 @@
-#ifndef _CONTEXT_H_
-#define _CONTEXT_H_
+#pragma once
 #include <iostream>
 #include "Strategy.h"
 
+using namespace std;
 /*这个类是Strategy模式的关键，
   也是Strategy模式和Template模式的根本区别所在。
   *Strategy通过“组合”（委托）方式实现算法（实现）的异构，
@@ -12,10 +12,9 @@
 class Context
 {
 public:
-    Context(Strategy*);
-    ~Context();
-    void doAnything();
+    Context(Strategy* pStrategy);
+    ~Context(void);
+    void doAnything(void);
 private:
     Strategy* _strategy;
 };
-#endif
