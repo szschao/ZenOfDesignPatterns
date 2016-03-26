@@ -1,9 +1,9 @@
-public class Proxy implements Subject{
-    //要代理哪个实现类
-    private Subject subject = null;
+public class Agent implements IStar{
+    //定义是谁的经纪人
+    private IStar star = null;
     //默认被代理者
-    public Proxy(){
-        this.subject = new RealSubject();
+    public Agent(){
+        this.star = new Singer();
     }
     /*
      *通过构造函数传递代理者
@@ -12,13 +12,13 @@ public class Proxy implements Subject{
      * this.subject = _subject;
      *}
      */
-    public Proxy(Object ...object){
+    public Agent(Object ...object){
 
     }
     //实现接口中定义的方法
-    public void request(){
+    public void sign(){
          this.before();
-         this.subject.request();
+         this.star.sign();
          this.after();
     }
     //预处理
