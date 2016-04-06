@@ -16,7 +16,7 @@ int main()
     Strategy* pStrategy = new ConcreteStrategy1();
     Context* pContext = new Context(pStrategy);
     pContext->doAnything();
-	delete pContext;
+    delete pContext;
     pContext = NULL;
 
     cout << "-----------------------------" << endl;
